@@ -1,0 +1,6 @@
+{
+    "require": {
+        "johngrogg/ics-parser": "^2.0",
+        "google/apiclient": "^2.1"
+    }
+}
