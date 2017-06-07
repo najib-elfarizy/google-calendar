@@ -54,6 +54,7 @@ if ($client->getAccessToken()) {
 			</div>
 		</nav> 
 		<div class="container-fluid">
+			<?php if(!empty($eventList)) { ?>
 			<h3><?php echo $eventList->summary ?></h3>
 			<ul class="list-group">
 				<?php if (count($eventList->getItems()) == 0) { ?>
@@ -72,6 +73,7 @@ if ($client->getAccessToken()) {
 					</a>
 				<?php } }?>
 			</ul>
+			<?php } ?>
 		</div>
 
         <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
